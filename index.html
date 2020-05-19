@@ -39,6 +39,7 @@
 
     <!-- Clean UI Admin Template Scripts -->
     <script src="assets/common/js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
 
@@ -60,8 +61,9 @@
                                 <a href="javascript: void(0);" class="nav-link cwt__main-menu__link cwt__main-menu__link--active cwt__js-click__preview">Inicio</a>
                                 <a href="javascript: void(0);" class="nav-link cwt__main-menu__link cwt__js-click__features">Características</a>
                                 <a href="javascript: void(0);" class="nav-link cwt__main-menu__link cwt__js-click__about">Problema</a>
+                                <a href="javascript: void(0);" class="nav-link cwt__main-menu__link cwt__js-click__gallery">Contactanos</a>
                             </div>
-                            <a href="https://motor-doc.netlify.com/" class="nav-link btn btn-primary cwt__main-menu__link cwt__main-menu__link--button">Iniciar Sesión</a>
+                            <a href="https://motor-doc.netlify.com/" class="nav-link btn btn-primary cwt__main-menu__link cwt__main-menu__link--button">Empecemos</a>
                         </nav>
                     </div>
                 </div>
@@ -266,6 +268,88 @@
                 </div>
             </div>
 
+            <!-- Action Block -->
+            <div class="cwt__block cwt__about">
+                <div class="cwt__action__container">
+                    <div class="cwt__action__container-inner">
+                        <a href="https://motor-doc.netlify.com/" class="btn btn-primary cwt__action__button">
+                            Contactanos <br /><small>Ahora</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- About Us -->
+             <div class="cwt__block cwt__gallery">
+                <h1 class="cwt__block-title">
+                    Contactanos
+                </h1>
+                <div class="cwt__feedback__user__title" align="center">
+                    <span>
+                        Ingresa de manera correcta todos tus datos en el formulario que se encuentra a 
+                        continuación, serán procesados de manera privada y segura para ser analizados 
+                        por nuestro equipo encargado, quienes posteriormente te contactarán con con usted
+                    </span>
+                </div>
+                <div class="cwt__gallery__container">
+                    <div class="row">
+                        <br />
+                        <div class="row">
+                            <div class="col-lg-6" class="hidden-image">
+                                <img src="assets/common/img/banner-mobile-contactanos.png" class="contactUs"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="alert" id="demo" style="display:none">
+                                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                                    <strong>Exito!</strong> Se ha enviado el correo correctamente
+                                </div>                            
+                                <form id="form-contact-us" class="formulario" >
+                                    <label for="">Nombre y apellido</label>
+                                    <input required id="name" type="text" class="formulario__input">
+                                    <label for="">Correo</label>
+                                    <input required  id="email"  type="email" class="formulario__input">
+                                    <label for="" >Teléfono</label>
+                                    <input required  id="mobilephone"  type="number" class="formulario__input">
+                                    <label for="" >Mensaje</label>
+                                    <textarea required id="message" name="textarea" rows="3" cols="50" class="formulario__input"></textarea>
+                                    <label for="" class="formulario__label">Mensaje</label>
+
+                                    <input type="submit" class="formulario__submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div align="center">
+                    <div class="image-facebook">
+                        <div class="row">
+                            <h1 class="cwt__block-title">
+                                Redes sociales
+                            </h1>
+                            <div class="cwt__feedback__user__title" align="center">
+                                <span>
+                                    Siguenos en nuestras redes sociales para conocer mas de nosotros
+                                </span>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="assets/common/img/siguenos-en-instagram-png-1.png" class="image-instagram"/>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="https://www.facebook.com/Motor-Doc-100802608319058/?ref=page_internal" target="_blank">
+                                    <img src="assets/common/img/siguenos-en-facebook-home.png" class="image-facebook"/>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="assets/common/img/youtube.png" class="image-instagram"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
         </div>
     </div>
 
@@ -291,7 +375,7 @@
             </div>
         </div>
     </div>
+    <script src="index.js" ></script>
 </div>
-
 </body>
 </html>
